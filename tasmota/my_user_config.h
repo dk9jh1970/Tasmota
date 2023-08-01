@@ -17,8 +17,21 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef _MY_USER_CONFIG_H_
-#define _MY_USER_CONFIG_H_
+#ifndef _USER_CONFIG_OVERRIDE_H_
+#define _USER_CONFIG_OVERRIDE_H_
+ 
+#ifndef USE_SCRIPT
+#define USE_SCRIPT
+#endif
+#ifndef USE_SML_M
+#define USE_SML_M
+#endif
+#ifdef USE_RULES
+#undef USE_RULES
+#endif
+ 
+#endif  // _USER_CONFIG_OVERRIDE_H_
+
 
 /*********************************************************************************************\
  * This file consists of TWO sections.
